@@ -1,0 +1,17 @@
+{'func': 'Conv2D', 'arg1': [1, 28, 28], 'arg2': 100, 'kernel_size': [7, 7]}
+{'func': 'MaxPool2d'}
+{'func': 'Flatten'}
+{'func': 'linear', 'arg1': 100, 'arg2': 5000}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 5000, 'arg2': 2000}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 2000, 'arg2': 1000}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 1000, 'arg2': 500}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 500, 'arg2': 100}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 100, 'arg2': 10}
+{'func': 'sigmoid'}
+{'func': 'compile', 'optimizer': 'rmsprop', 'loss': 'categorical_crossentropy'}
+[28, 28, 10]

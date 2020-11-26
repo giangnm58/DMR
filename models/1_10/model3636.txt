@@ -1,0 +1,19 @@
+{'func': 'Conv2D', 'arg1': [1, 28, 28], 'arg2': 32, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Dropout', 'arg1': 0.25}
+{'func': 'Conv2D', 'arg1': 32, 'arg2': 64, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Dropout', 'arg1': 0.25}
+{'func': 'Conv2D', 'arg1': 64, 'arg2': 128, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'Dropout', 'arg1': 0.4}
+{'func': 'Flatten'}
+{'func': 'linear', 'arg1': 128, 'arg2': 128}
+{'func': 'relu'}
+{'func': 'Dropout', 'arg1': 0.3}
+{'func': 'linear', 'arg1': 128, 'arg2': 10}
+{'func': 'softmax'}
+{'func': 'Adam'}
+[28, 28, 10]

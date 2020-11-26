@@ -1,0 +1,22 @@
+{'func': 'Conv2D', 'arg1': [3, 224, 224], 'arg2': 64, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 64, 'arg2': 64, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Conv2D', 'arg1': 64, 'arg2': 128, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 128, 'arg2': 128, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Conv2D', 'arg1': 128, 'arg2': 256, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 256, 'arg2': 256, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 256, 'arg2': 256, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Flatten'}
+{'func': 'linear', 'arg1': 256, 'arg2': 2}
+{'func': 'relu'}
+{'func': 'SGD', 'lr': 1e-06, 'momentum': 0.9, 'decay': 0.001}
+[224, 224, 2]

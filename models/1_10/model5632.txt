@@ -1,0 +1,17 @@
+{'func': 'Conv2D', 'arg1': [1, 28, 28], 'arg2': 24, 'kernel_size': [7], 'strides': [1]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 24, 'arg2': 64, 'kernel_size': [5, 5], 'strides': [1]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 64, 'arg2': 96, 'kernel_size': [3], 'strides': [1]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 96, 'arg2': 96, 'kernel_size': [3], 'strides': [1]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 96, 'arg2': 64, 'kernel_size': [3], 'strides': [2]}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 64, 'arg2': 1024}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 1024, 'arg2': 1024}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 1024, 'arg2': 1024}
+{'func': 'softmax'}
+[28, 28, 1024]

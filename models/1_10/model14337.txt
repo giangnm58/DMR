@@ -1,0 +1,13 @@
+{'func': 'Conv2D', 'arg1': [1, 28, 28], 'arg2': 12, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 12, 'arg2': 12, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 12, 'arg2': 12, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'Flatten'}
+{'func': 'linear', 'arg1': 12, 'arg2': 100}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 100, 'arg2': 10}
+{'func': 'softmax'}
+{'func': 'compile', 'optimizer': 'adam', 'metrics': ['accuracy']}
+[28, 28, 10]

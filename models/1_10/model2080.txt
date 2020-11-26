@@ -1,0 +1,14 @@
+{'func': 'Conv2D', 'arg1': [1, 32, 32], 'arg2': 6, 'kernel_size': [5, 5]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Conv2D', 'arg1': 6, 'arg2': 16, 'kernel_size': [5, 5]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Flatten'}
+{'func': 'linear', 'arg1': 16, 'arg2': 120}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 120, 'arg2': 84}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 84, 'arg2': 10}
+{'func': 'SGD'}
+[32, 32, 10]

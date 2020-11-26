@@ -1,0 +1,20 @@
+{'func': 'Conv2D', 'arg1': [3, 150, 150], 'arg2': 32, 'kernel_size': [5, 5]}
+{'func': 'relu'}
+{'func': 'Dropout', 'arg1': 0.3}
+{'func': 'Conv2D', 'arg1': 32, 'arg2': 64, 'kernel_size': [5, 5]}
+{'func': 'relu'}
+{'func': 'Dropout', 'arg1': 0.3}
+{'func': 'Conv2D', 'arg1': 64, 'arg2': 128, 'kernel_size': [5, 5]}
+{'func': 'relu'}
+{'func': 'Dropout', 'arg1': 0.5}
+{'func': 'Conv2D', 'arg1': 128, 'arg2': 256, 'kernel_size': [5, 5]}
+{'func': 'relu'}
+{'func': 'Dropout', 'arg1': 0.5}
+{'func': 'Flatten'}
+{'func': 'linear', 'arg1': 256, 'arg2': 512}
+{'func': 'relu'}
+{'func': 'Dropout', 'arg1': 0.5}
+{'func': 'linear', 'arg1': 512, 'arg2': 2}
+{'func': 'softmax'}
+{'func': 'SGD', 'lr': 0.02, 'decay': 1e-06, 'momentum': 0.9}
+[150, 150, 2]

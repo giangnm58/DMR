@@ -1,0 +1,13 @@
+{'func': 'Conv2D', 'arg1': [1, 28, 28], 'arg2': 5, 'kernel_size': [3, 3]}
+{'func': 'tanh'}
+{'func': 'MaxPool2d'}
+{'func': 'Conv2D', 'arg1': 5, 'arg2': 10, 'kernel_size': [3, 3]}
+{'func': 'tanh'}
+{'func': 'MaxPool2d'}
+{'func': 'Flatten'}
+{'func': 'linear', 'arg1': 10, 'arg2': 100}
+{'func': 'tanh'}
+{'func': 'linear', 'arg1': 100, 'arg2': 10}
+{'func': 'softmax'}
+{'func': 'compile', 'optimizer': 'sgd', 'loss': 'categorical_crossentropy', 'metrics': ['accuracy']}
+[28, 28, 10]

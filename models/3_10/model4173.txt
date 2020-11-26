@@ -1,0 +1,31 @@
+{'func': 'Conv2D', 'arg1': [3, 66, 200], 'arg2': 24, 'kernel_size': [5]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Dropout', 'arg1': 0.5}
+{'func': 'Conv2D', 'arg1': 24, 'arg2': 36, 'kernel_size': [5]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Dropout', 'arg1': 0.5}
+{'func': 'Conv2D', 'arg1': 36, 'arg2': 48, 'kernel_size': [5]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Dropout', 'arg1': 0.5}
+{'func': 'Conv2D', 'arg1': 48, 'arg2': 64, 'kernel_size': [3]}
+{'func': 'relu'}
+{'func': 'Dropout', 'arg1': 0.5}
+{'func': 'Conv2D', 'arg1': 64, 'arg2': 64, 'kernel_size': [3]}
+{'func': 'relu'}
+{'func': 'Dropout', 'arg1': 0.5}
+{'func': 'Flatten'}
+{'func': 'linear', 'arg1': 64, 'arg2': 100}
+{'func': 'relu'}
+{'func': 'Dropout', 'arg1': 0.5}
+{'func': 'linear', 'arg1': 100, 'arg2': 50}
+{'func': 'relu'}
+{'func': 'Dropout', 'arg1': 0.5}
+{'func': 'linear', 'arg1': 50, 'arg2': 10}
+{'func': 'tanh'}
+{'func': 'Dropout', 'arg1': 0.5}
+{'func': 'linear', 'arg1': 10, 'arg2': 1}
+{'func': 'compile', 'optimizer': 'Adam', 'loss': 'mse', 'lr': 2e-05}
+[66, 200, 1]

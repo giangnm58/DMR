@@ -1,0 +1,16 @@
+{'func': 'Conv2D', 'arg1': [3, 256, 256], 'arg2': 64, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Conv2D', 'arg1': 64, 'arg2': 64, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Conv2D', 'arg1': 64, 'arg2': 128, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Flatten'}
+{'func': 'linear', 'arg1': 128, 'arg2': 128}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 128, 'arg2': 4}
+{'func': 'softmax'}
+{'func': 'compile', 'optimizer': 'adam', 'loss': 'categorical_crossentropy', 'metrics': ['accuracy']}
+[256, 256, 4]

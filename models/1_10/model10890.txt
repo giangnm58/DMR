@@ -1,0 +1,12 @@
+{'func': 'Conv2D', 'arg1': [1, 28, 28], 'arg2': 64, 'kernel_size': [3, 3], 'strides': [2, 2]}
+{'func': 'relu'}
+{'func': 'BatchNorm2d'}
+{'func': 'Conv2D', 'arg1': 64, 'arg2': 128, 'kernel_size': [3, 3], 'strides': [2, 2]}
+{'func': 'relu'}
+{'func': 'BatchNorm2d'}
+{'func': 'linear', 'arg1': 128, 'arg2': 256}
+{'func': 'relu'}
+{'func': 'Dropout', 'arg1': 0.5}
+{'func': 'linear', 'arg1': 256, 'arg2': 10}
+{'func': 'softmax'}
+[28, 28, 10]

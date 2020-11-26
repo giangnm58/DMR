@@ -1,0 +1,28 @@
+{'func': 'Conv2D', 'arg1': [3, 448, 448], 'arg2': 6, 'kernel_size': [5, 5], 'strides': [1, 1]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 6, 'arg2': 6, 'kernel_size': [5, 5], 'strides': [1, 1]}
+{'func': 'BatchNorm2d'}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Conv2D', 'arg1': 6, 'arg2': 16, 'kernel_size': [5, 5], 'strides': [1, 1]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 16, 'arg2': 16, 'kernel_size': [5, 5], 'strides': [1, 1]}
+{'func': 'BatchNorm2d'}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Conv2D', 'arg1': 16, 'arg2': 22, 'kernel_size': [5, 5], 'strides': [1, 1]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 22, 'arg2': 22, 'kernel_size': [5, 5], 'strides': [1, 1]}
+{'func': 'BatchNorm2d'}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Flatten'}
+{'func': 'linear', 'arg1': 22, 'arg2': 300}
+{'func': 'BatchNorm2d'}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 300, 'arg2': 200}
+{'func': 'BatchNorm2d'}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 200, 'arg2': 100}
+{'func': 'softmax'}
+[448, 448, 100]

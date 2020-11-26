@@ -1,0 +1,28 @@
+{'func': 'Conv2D', 'arg1': [3, 32, 32], 'arg2': 32, 'kernel_size': [7, 7], 'strides': [2, 2]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 32, 'arg2': 32, 'kernel_size': [3, 3], 'strides': [1, 1]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Conv2D', 'arg1': 32, 'arg2': 32, 'kernel_size': [7, 7], 'strides': [2, 2]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 32, 'arg2': 32, 'kernel_size': [3, 3], 'strides': [1, 1]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Conv2D', 'arg1': 32, 'arg2': 32, 'kernel_size': [7, 7], 'strides': [1, 1]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 32, 'arg2': 32, 'kernel_size': [3, 3], 'strides': [1, 1]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Flatten'}
+{'func': 'linear', 'arg1': 32, 'arg2': 100}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 100, 'arg2': 50}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 50, 'arg2': 50}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 50, 'arg2': 20}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 20, 'arg2': 10}
+{'func': 'softmax'}
+{'func': 'Adam', 'lr': 0.01}
+[32, 32, 10]

@@ -1,0 +1,14 @@
+{'func': 'Conv2D', 'arg1': [1, 28, 28], 'arg2': 4, 'kernel_size': [5, 5]}
+{'func': 'relu'}
+{'func': 'Dropout', 'arg1': 0.25}
+{'func': 'Conv2D', 'arg1': 4, 'arg2': 12, 'kernel_size': [5, 5]}
+{'func': 'relu'}
+{'func': 'Dropout', 'arg1': 0.5}
+{'func': 'Flatten'}
+{'func': 'linear', 'arg1': 12, 'arg2': 256}
+{'func': 'relu'}
+{'func': 'Dropout', 'arg1': 0.5}
+{'func': 'linear', 'arg1': 256, 'arg2': 10}
+{'func': 'softmax'}
+{'func': 'Adadelta'}
+[28, 28, 10]

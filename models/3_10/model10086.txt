@@ -1,0 +1,20 @@
+{'func': 'Conv2D', 'arg1': [3, 720, 960], 'arg2': 64, 'kernel_size': [2, 2]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Conv2D', 'arg1': 64, 'arg2': 64, 'kernel_size': [4, 4]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Conv2D', 'arg1': 64, 'arg2': 128, 'kernel_size': [4, 4]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Conv2D', 'arg1': 128, 'arg2': 256, 'kernel_size': [4, 4]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Flatten'}
+{'func': 'Dropout', 'arg1': 0.25}
+{'func': 'linear', 'arg1': 256, 'arg2': 128}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 128, 'arg2': 5}
+{'func': 'softmax'}
+{'func': 'Adadelta'}
+[720, 960, 5]

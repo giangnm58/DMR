@@ -1,0 +1,27 @@
+{'func': 'Conv2D', 'arg1': [1, 28, 28], 'arg2': 32, 'kernel_size': [5, 5], 'strides': [1, 1]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Conv2D', 'arg1': 32, 'arg2': 64, 'kernel_size': [5, 5]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Flatten'}
+{'func': 'linear', 'arg1': 64, 'arg2': 1000}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 1000, 'arg2': 10}
+{'func': 'softmax'}
+{'func': 'Conv2D', 'arg1': [1, 28, 28], 'arg2': 32, 'kernel_size': [5, 5], 'strides': [1, 1]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Conv2D', 'arg1': 32, 'arg2': 64, 'kernel_size': [5, 5]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Conv2D', 'arg1': 64, 'arg2': 64, 'kernel_size': [4, 4]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Flatten'}
+{'func': 'linear', 'arg1': 64, 'arg2': 1000}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 1000, 'arg2': 10}
+{'func': 'softmax'}
+{'func': 'SGD', 'lr': 0.01}
+[28, 28, 10]

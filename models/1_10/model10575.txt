@@ -1,0 +1,24 @@
+{'func': 'Conv2D', 'arg1': [1, 45, 45], 'arg2': 225, 'kernel_size': [2], 'strides': [1, 1]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Conv2D', 'arg1': 225, 'arg2': 128, 'kernel_size': [2]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Dropout', 'arg1': 0.3}
+{'func': 'Conv2D', 'arg1': 128, 'arg2': 64, 'kernel_size': [2]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Dropout', 'arg1': 0.4}
+{'func': 'Flatten'}
+{'func': 'linear', 'arg1': 64, 'arg2': 64}
+{'func': 'relu'}
+{'func': 'Dropout', 'arg1': 0.5}
+{'func': 'linear', 'arg1': 64, 'arg2': 32}
+{'func': 'relu'}
+{'func': 'Dropout', 'arg1': 0.2}
+{'func': 'linear', 'arg1': 32, 'arg2': 8}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 8, 'arg2': 2}
+{'func': 'softmax'}
+{'func': 'compile', 'loss': 'binary_crossentropy', 'optimizer': 'adam', 'metrics': ['accuracy']}
+[45, 45, 2]

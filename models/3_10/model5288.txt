@@ -1,0 +1,13 @@
+{'func': 'Conv2D', 'arg1': [3, 32, 32], 'arg2': 30, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 30, 'arg2': 13, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'Flatten'}
+{'func': 'linear', 'arg1': 13, 'arg2': 120}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 120, 'arg2': 86}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 86, 'arg2': 10}
+{'func': 'softmax'}
+{'func': 'compile', 'loss': 'categorical_crossentropy', 'metrics': ['accuracy']}
+[32, 32, 10]

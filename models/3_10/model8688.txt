@@ -1,0 +1,23 @@
+{'func': 'Conv2D', 'arg1': [3, 128, 128], 'arg2': 128, 'kernel_size': [5, 5]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Conv2D', 'arg1': 128, 'arg2': 64, 'kernel_size': [5, 5]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Conv2D', 'arg1': 64, 'arg2': 32, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Flatten'}
+{'func': 'linear', 'arg1': 32, 'arg2': 64}
+{'func': 'relu'}
+{'func': 'Dropout', 'arg1': 0.5}
+{'func': 'linear', 'arg1': 64, 'arg2': 64}
+{'func': 'relu'}
+{'func': 'Dropout', 'arg1': 0.5}
+{'func': 'linear', 'arg1': 64, 'arg2': 64}
+{'func': 'relu'}
+{'func': 'Dropout', 'arg1': 0.5}
+{'func': 'linear', 'arg1': 64, 'arg2': 17}
+{'func': 'sigmoid'}
+{'func': 'compile', 'loss': 'binary_crossentropy', 'optimizer': 'adam', 'metrics': ['accuracy']}
+[128, 128, 17]

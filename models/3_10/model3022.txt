@@ -1,0 +1,26 @@
+{'func': 'Conv2D', 'arg1': [3, 75, 75], 'arg2': 64, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Dropout', 'arg1': 0.2}
+{'func': 'Conv2D', 'arg1': 64, 'arg2': 128, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Dropout', 'arg1': 0.2}
+{'func': 'Conv2D', 'arg1': 128, 'arg2': 128, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Dropout', 'arg1': 0.2}
+{'func': 'Conv2D', 'arg1': 128, 'arg2': 64, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Dropout', 'arg1': 0.2}
+{'func': 'Flatten'}
+{'func': 'linear', 'arg1': 64, 'arg2': 512}
+{'func': 'relu'}
+{'func': 'Dropout', 'arg1': 0.2}
+{'func': 'linear', 'arg1': 512, 'arg2': 256}
+{'func': 'relu'}
+{'func': 'Dropout', 'arg1': 0.2}
+{'func': 'linear', 'arg1': 256, 'arg2': 1}
+{'func': 'sigmoid'}
+[75, 75, 1]

@@ -1,0 +1,14 @@
+{'func': 'Conv2D', 'arg1': [1, 126, 400], 'arg2': 64, 'kernel_size': [9, 9]}
+{'func': 'MaxPool2d'}
+{'func': 'Dropout', 'arg1': 0.1}
+{'func': 'Conv2D', 'arg1': 64, 'arg2': 128, 'kernel_size': [5, 5]}
+{'func': 'MaxPool2d'}
+{'func': 'Dropout', 'arg1': 0.1}
+{'func': 'Conv2D', 'arg1': 128, 'arg2': 256, 'kernel_size': [3, 3]}
+{'func': 'MaxPool2d'}
+{'func': 'Flatten'}
+{'func': 'linear', 'arg1': 256, 'arg2': 128}
+{'func': 'linear', 'arg1': 128, 'arg2': 1}
+{'func': 'sigmoid'}
+{'func': 'Adam', 'lr': 1e-05}
+[126, 400, 1]

@@ -1,0 +1,22 @@
+{'func': 'Conv2D', 'arg1': [1, 128, 128], 'arg2': 24, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 24, 'arg2': 36, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 36, 'arg2': 48, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 48, 'arg2': 64, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 64, 'arg2': 64, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 64, 'arg2': 64, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'Flatten'}
+{'func': 'Dropout', 'arg1': 0.5}
+{'func': 'linear', 'arg1': 64, 'arg2': 128}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 128, 'arg2': 64}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 64, 'arg2': 6}
+{'func': 'sigmoid'}
+{'func': 'compile', 'loss': 'categorical_crossentropy', 'optimizer': 'adam', 'metrics': ['accuracy']}
+[128, 128, 6]

@@ -1,0 +1,15 @@
+{'func': 'Conv2D', 'arg1': [1, 28, 28], 'arg2': 4, 'kernel_size': [5, 5]}
+{'func': 'tanh'}
+{'func': 'MaxPool2d'}
+{'func': 'Conv2D', 'arg1': 4, 'arg2': 8, 'kernel_size': [3, 3]}
+{'func': 'tanh'}
+{'func': 'Conv2D', 'arg1': 8, 'arg2': 16, 'kernel_size': [3, 3]}
+{'func': 'tanh'}
+{'func': 'MaxPool2d'}
+{'func': 'Flatten'}
+{'func': 'linear', 'arg1': 16, 'arg2': 128}
+{'func': 'tanh'}
+{'func': 'linear', 'arg1': 128, 'arg2': 10}
+{'func': 'softmax'}
+{'func': 'SGD', 'lr': 0.05, 'momentum': 0.9, 'decay': 1e-06}
+[28, 28, 10]

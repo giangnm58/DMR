@@ -1,0 +1,21 @@
+{'func': 'Conv2D', 'arg1': [3, 64, 64], 'arg2': 16, 'kernel_size': [3], 'strides': [2, 2]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 16, 'arg2': 16, 'kernel_size': [3], 'strides': [2, 2]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 16, 'arg2': 8, 'kernel_size': [3], 'strides': [2, 2]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 8, 'arg2': 4, 'kernel_size': [3]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 4, 'arg2': 2, 'kernel_size': [3]}
+{'func': 'relu'}
+{'func': 'Flatten'}
+{'func': 'Dropout', 'arg1': 0.25}
+{'func': 'linear', 'arg1': 2, 'arg2': 128}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 128, 'arg2': 64}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 64, 'arg2': 16}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 16, 'arg2': 1}
+{'func': 'Adam', 'lr': 0.0001}
+[64, 64, 1]

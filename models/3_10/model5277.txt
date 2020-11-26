@@ -1,0 +1,32 @@
+{'func': 'Conv2D', 'arg1': [3, 150, 330], 'arg2': 32, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 32, 'arg2': 32, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Conv2D', 'arg1': 32, 'arg2': 32, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 32, 'arg2': 32, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Conv2D', 'arg1': 32, 'arg2': 64, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'Conv2D', 'arg1': 64, 'arg2': 64, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Conv2D', 'arg1': 64, 'arg2': 128, 'kernel_size': [3, 3]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Flatten'}
+{'func': 'Dropout', 'arg1': 0.5}
+{'func': 'linear', 'arg1': 128, 'arg2': 36}
+{'func': 'softmax'}
+{'func': 'linear', 'arg1': 36, 'arg2': 36}
+{'func': 'softmax'}
+{'func': 'linear', 'arg1': 36, 'arg2': 36}
+{'func': 'softmax'}
+{'func': 'linear', 'arg1': 36, 'arg2': 36}
+{'func': 'softmax'}
+{'func': 'linear', 'arg1': 36, 'arg2': 36}
+{'func': 'softmax'}
+{'func': 'compile', 'loss': 'categorical_crossentropy', 'optimizer': 'Adamax', 'metrics': ['accuracy']}
+[150, 330, 36]

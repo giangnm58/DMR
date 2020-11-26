@@ -1,0 +1,23 @@
+{'func': 'Conv2D', 'arg1': [1, 28, 28], 'arg2': 64, 'kernel_size': [3, 3], 'strides': [1, 1]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Dropout', 'arg1': 0.5}
+{'func': 'Conv2D', 'arg1': 64, 'arg2': 128, 'kernel_size': [3, 3], 'strides': [1, 1]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Dropout', 'arg1': 0.5}
+{'func': 'Conv2D', 'arg1': 128, 'arg2': 256, 'kernel_size': [3, 3], 'strides': [1, 1]}
+{'func': 'relu'}
+{'func': 'MaxPool2d'}
+{'func': 'Dropout', 'arg1': 0.5}
+{'func': 'Flatten'}
+{'func': 'linear', 'arg1': 256, 'arg2': 128}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 128, 'arg2': 64}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 64, 'arg2': 32}
+{'func': 'relu'}
+{'func': 'linear', 'arg1': 32, 'arg2': 10}
+{'func': 'softmax'}
+{'func': 'compile', 'loss': 'categorical_crossentropy', 'optimizer': 'adagrad', 'metrics': ['accuracy']}
+[28, 28, 10]
